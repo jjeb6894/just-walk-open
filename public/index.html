@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="An open, local-first walking rewards experience." />
+    <meta name="theme-color" content="#0c1110" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Just Walk — Every Step, Rewarded</title>
+  </head>
+  <body>
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="Just Walk home"><span class="brand-mark">↗</span><span>JUST<br />WALK</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#app">The app</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#protocol">Protocol</a>
+      </nav>
+      <a class="button button-small" href="#dashboard">Open web app <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><i></i> EVERY STEP, REWARDED.</p>
+          <h1>WALK <em>10K</em><br />STEPS.</h1>
+          <p class="lede">Turn everyday movement into rewards you actually want. Track your progress, protect your streak, and put your credits to work.</p>
+          <div class="hero-actions">
+            <a class="button" href="#dashboard">Start walking <span>↗</span></a>
+            <a class="text-link" href="#protocol">See the protocol <span>↓</span></a>
+          </div>
+          <div class="hero-proof"><span>LOCAL-FIRST</span><span>NO ACCOUNT REQUIRED</span><span>OPEN SOURCE</span></div>
+        </div>
+
+        <div class="hero-art reveal" aria-label="Daily walking progress preview">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="streak-float"><span>🔥</span><small>STREAK</small><strong id="hero-streak">07</strong><b>DAYS</b></div>
+          <div class="credit-float"><span>✦</span><small>CREDITS EARNED</small><strong>+10%</strong></div>
+          <div class="phone">
+            <div class="phone-top"><span>9:41</span><i></i><i></i><i></i></div>
+            <div class="phone-head"><span class="tiny-logo">↗</span><strong>JUST WALK</strong><button class="ghost-icon" aria-label="Open settings">•••</button></div>
+            <div class="phone-day"><span>MONDAY, 23 SEP</span><strong>GOOD MORNING, WALKER.</strong></div>
+            <div class="progress-wrap">
+              <svg class="progress-ring" viewBox="0 0 180 180" aria-hidden="true"><circle cx="90" cy="90" r="73"></circle><circle id="hero-ring" class="meter" cx="90" cy="90" r="73"></circle></svg>
+              <div class="progress-number"><span>STEPS TODAY</span><strong id="hero-steps">9,847</strong><small>OF <b>10,000</b></small><em id="hero-percent">98.5%</em></div>
+            </div>
+            <div class="week" aria-label="Walking week"><span class="done">M</span><span class="done">T</span><span class="done">W</span><span class="done">T</span><span class="done">F</span><span class="done">S</span><span class="active">S</span></div>
+            <div class="phone-stats"><div><span>DISTANCE</span><strong id="hero-distance">4.8 <small>KM</small></strong></div><div><span>CALORIES</span><strong id="hero-calories">412 <small>KCAL</small></strong></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Just Walk values"><div>YOUR PACE. YOUR POWER. <span>✦</span> YOUR PACE. YOUR POWER. <span>✦</span> YOUR PACE. YOUR POWER. <span>✦</span></div></section>
+
+      <section class="app-showcase shell section" id="app">
+        <div class="section-intro"><p class="eyebrow"><i></i> THE APP</p><h2>BUILT FOR<br /><em>REAL</em> WALKERS.</h2></div>
+        <p class="section-copy">A fast, focused experience that gives movement a little more momentum. Your data lives in your browser, so you stay in control.</p>
+        <div class="feature-grid">
+          <article class="feature feature-dark"><span class="feature-number">01</span><h3>TRACK<br />THE DAY.</h3><p>See your steps, distance, calories, and goal progress at a glance.</p><div class="mini-chart" aria-hidden="true"><span style="height:25%"></span><span style="height:48%"></span><span style="height:34%"></span><span style="height:65%"></span><span style="height:52%"></span><span style="height:83%"></span><span style="height:96%"></span></div></article>
+          <article class="feature feature-lime"><span class="feature-number">02</span><h3>BUILD A<br />STREAK.</h3><p>Keep your rhythm visible. One good day makes the next one easier.</p><div class="streak-dots" aria-hidden="true"><b>✓</b><b>✓</b><b>✓</b><b>✓</b><b>✓</b><b>✓</b><b>7</b></div></article>
+          <article class="feature feature-blue"><span class="feature-number">03</span><h3>SPEND<br />CREDITS.</h3><p>Exchange credits for rewards from the things you already love.</p><div class="reward-shape" aria-hidden="true">✦</div></article>
+        </div>
+      </section>
+
+      <section class="dashboard-section" id="dashboard">
+        <div class="shell dashboard-head"><div><p class="eyebrow"><i></i> LIVE DEMO</p><h2>YOUR <em>DAILY</em><br />MOMENTUM.</h2></div><p>This is a working, browser-only demo. Add steps, update goals, and redeem rewards. Everything is saved locally on this device.</p></div>
+        <div class="shell dashboard-grid">
+          <section class="dashboard-card daily-card"><div class="card-top"><span>TODAY’S WALK</span><button class="reset-button" id="reset-data" type="button">Reset demo</button></div><div class="daily-main"><div class="dashboard-progress"><svg viewBox="0 0 180 180" aria-hidden="true"><circle cx="90" cy="90" r="73"></circle><circle class="meter" id="dashboard-ring" cx="90" cy="90" r="73"></circle></svg><div><span>STEPS</span><strong id="dashboard-steps">9,847</strong><small>OF <b id="dashboard-goal">10,000</b></small></div></div><div class="walk-summary"><p><span>Distance</span><b id="dashboard-distance">4.8 km</b></p><p><span>Energy</span><b id="dashboard-calories">412 kcal</b></p><p><span>Streak</span><b><i>🔥</i> <span id="dashboard-streak">7</span> days</b></p></div></div><div class="action-row"><button class="button inverse" id="add-steps" type="button">+ 250 steps</button><button class="outline-button" id="finish-goal" type="button">Finish goal</button></div></section>
+          <section class="dashboard-card goal-card"><span>YOUR GOAL</span><label for="goal-input">Daily steps</label><div class="goal-input"><input id="goal-input" type="number" min="1000" max="100000" step="500" value="10000" /><span>steps</span></div><p>Choose a target that feels possible, then add a little more when it becomes routine.</p><button class="text-button" id="save-goal" type="button">Save goal <span>→</span></button></section>
+          <section class="dashboard-card credit-card"><span>WALK WALLET</span><div class="credit-total"><small>AVAILABLE</small><strong id="credit-total">1,280</strong><b>JW CREDITS</b></div><p>Hit your daily goal to earn 100 credits. A seven-day streak adds a 10% boost.</p><div class="credit-line"><span>Next goal reward</span><b>+100 <i>✦</i></b></div></section>
+        </div>
+      </section>
+
+      <section class="rewards-section section" id="rewards">
+        <div class="shell rewards-heading"><div><p class="eyebrow"><i></i> REWARDS CATALOGUE</p><h2>PUT YOUR<br /><em>STEPS</em> TO WORK.</h2></div><p>Sample rewards for your editable demo. Change these cards in <code>public/app.js</code> when you add real partners.</p></div>
+        <div class="shell rewards-grid" id="rewards-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="protocol-section" id="protocol">
+        <div class="shell"><p class="eyebrow"><i></i> THE PROTOCOL</p><h2>ONE SMALL<br />MOVE AT A TIME.</h2><p class="protocol-intro">A simple four-stage loop designed to make walking feel useful, immediate, and yours.</p><ol class="protocol-list"><li><span>01</span><div><h3>SET YOUR GOAL</h3><p>Choose the daily target that works for your life.</p></div><b>→</b></li><li><span>02</span><div><h3>TAKE THE WALK</h3><p>Record your movement whenever you are ready.</p></div><b>→</b></li><li><span>03</span><div><h3>KEEP THE STREAK</h3><p>Build proof that you can show up for yourself.</p></div><b>→</b></li><li><span>04</span><div><h3>USE YOUR CREDITS</h3><p>Unlock offers that make the next walk easier to start.</p></div><b>→</b></li></ol></div>
+      </section>
+
+      <section class="open-source shell"><div><p class="eyebrow"><i></i> OWN YOUR BUILD</p><h2>MADE TO BE<br /><em>REMADE.</em></h2></div><div><p>This version is intentionally small and transparent: no account, no tracking, no locked-in platform. It is ready for your GitHub repository and Cloudflare Worker.</p><a class="button" href="https://github.com/new" target="_blank" rel="noreferrer">Create GitHub repo <span>↗</span></a></div></section>
+    </main>
+
+    <footer class="site-footer shell"><a class="brand" href="#top"><span class="brand-mark">↗</span><span>JUST<br />WALK</span></a><p>Every step, rewarded. Built as an editable open-source starter.</p><div><a href="#app">App</a><a href="#rewards">Rewards</a><a href="#protocol">Protocol</a></div><small>© <span id="year"></span> Just Walk Open. MIT licensed.</small></footer>
+    <template id="reward-template"><article class="reward-card"><div class="reward-card-top"><span class="reward-symbol"></span><span class="reward-type"></span></div><h3></h3><p></p><div><b class="reward-cost"></b><button class="redeem-button" type="button">Redeem <span>↗</span></button></div></article></template>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

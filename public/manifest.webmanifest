@@ -1,0 +1,9 @@
+{
+  "name": "Just Walk Open",
+  "short_name": "Just Walk",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c1110",
+  "theme_color": "#dfff6d",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

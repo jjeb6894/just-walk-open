@@ -1,0 +1,16 @@
+{
+  "name": "just-walk-open",
+  "version": "1.0.0",
+  "private": false,
+  "description": "An open-source, local-first walking rewards web app.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.86.0"
+  }
+}
