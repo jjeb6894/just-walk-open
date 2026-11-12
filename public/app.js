@@ -5,14 +5,14 @@ const rewards = [
   { title: "WEEKEND RESET", description: "A guided-walk audio pack for a fresh start.", cost: 950, symbol: "W", type: "WELLNESS" },
 ];
 
-const load = () => ({ ...defaultState, ...JSON.parse(localStorage.getItem("just-walk-open") || "{}") });
+const load = () => ({ ...defaultState, ...JSON.parse(localStorage.getItem("stepbounty") || "{}") });
 let state = load();
 const $ = (selector, root = document) => root.querySelector(selector);
 const format = (value) => new Intl.NumberFormat("en-US").format(value);
 const progress = () => Math.min(100, (state.steps / state.goal) * 100);
 const distance = () => (state.steps / 2050).toFixed(1);
 const calories = () => Math.round(state.steps * 0.0418);
-const save = () => localStorage.setItem("just-walk-open", JSON.stringify(state));
+const save = () => localStorage.setItem("stepbounty", JSON.stringify(state));
 
 function setRing(id, value) {
   const ring = $(id);
