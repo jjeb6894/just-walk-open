@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="An open, local-first walking rewards experience." />
+    <meta name="description" content="A local-first walking rewards experience that turns daily steps into bounty credits." />
     <meta name="theme-color" content="#0c1110" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Just Walk — Every Step, Rewarded</title>
+    <title>StepBounty — Every Step, Rewarded</title>
   </head>
   <body>
     <header class="site-header shell">
-      <a class="brand" href="#top" aria-label="Just Walk home"><span class="brand-mark">↗</span><span>JUST<br />WALK</span></a>
+      <a class="brand" href="#top" aria-label="StepBounty home"><span class="brand-mark">↗</span><span>STEP<br />BOUNTY</span></a>
       <nav aria-label="Primary navigation">
         <a href="#app">The app</a>
         <a href="#rewards">Rewards</a>
@@ -40,7 +40,7 @@
           <div class="credit-float"><span>✦</span><small>CREDITS EARNED</small><strong>+10%</strong></div>
           <div class="phone">
             <div class="phone-top"><span>9:41</span><i></i><i></i><i></i></div>
-            <div class="phone-head"><span class="tiny-logo">↗</span><strong>JUST WALK</strong><button class="ghost-icon" aria-label="Open settings">•••</button></div>
+            <div class="phone-head"><span class="tiny-logo">↗</span><strong>STEPBOUNTY</strong><button class="ghost-icon" aria-label="Open settings">•••</button></div>
             <div class="phone-day"><span>MONDAY, 23 SEP</span><strong>GOOD MORNING, WALKER.</strong></div>
             <div class="progress-wrap">
               <svg class="progress-ring" viewBox="0 0 180 180" aria-hidden="true"><circle cx="90" cy="90" r="73"></circle><circle id="hero-ring" class="meter" cx="90" cy="90" r="73"></circle></svg>
@@ -52,7 +52,7 @@
         </div>
       </section>
 
-      <section class="ticker" aria-label="Just Walk values"><div>YOUR PACE. YOUR POWER. <span>✦</span> YOUR PACE. YOUR POWER. <span>✦</span> YOUR PACE. YOUR POWER. <span>✦</span></div></section>
+      <section class="ticker" aria-label="StepBounty values"><div>YOUR PACE. YOUR POWER. <span>✦</span> YOUR PACE. YOUR POWER. <span>✦</span> YOUR PACE. YOUR POWER. <span>✦</span></div></section>
 
       <section class="app-showcase shell section" id="app">
         <div class="section-intro"><p class="eyebrow"><i></i> THE APP</p><h2>BUILT FOR<br /><em>REAL</em> WALKERS.</h2></div>
@@ -69,7 +69,7 @@
         <div class="shell dashboard-grid">
           <section class="dashboard-card daily-card"><div class="card-top"><span>TODAY’S WALK</span><button class="reset-button" id="reset-data" type="button">Reset demo</button></div><div class="daily-main"><div class="dashboard-progress"><svg viewBox="0 0 180 180" aria-hidden="true"><circle cx="90" cy="90" r="73"></circle><circle class="meter" id="dashboard-ring" cx="90" cy="90" r="73"></circle></svg><div><span>STEPS</span><strong id="dashboard-steps">9,847</strong><small>OF <b id="dashboard-goal">10,000</b></small></div></div><div class="walk-summary"><p><span>Distance</span><b id="dashboard-distance">4.8 km</b></p><p><span>Energy</span><b id="dashboard-calories">412 kcal</b></p><p><span>Streak</span><b><i>🔥</i> <span id="dashboard-streak">7</span> days</b></p></div></div><div class="action-row"><button class="button inverse" id="add-steps" type="button">+ 250 steps</button><button class="outline-button" id="finish-goal" type="button">Finish goal</button></div></section>
           <section class="dashboard-card goal-card"><span>YOUR GOAL</span><label for="goal-input">Daily steps</label><div class="goal-input"><input id="goal-input" type="number" min="1000" max="100000" step="500" value="10000" /><span>steps</span></div><p>Choose a target that feels possible, then add a little more when it becomes routine.</p><button class="text-button" id="save-goal" type="button">Save goal <span>→</span></button></section>
-          <section class="dashboard-card credit-card"><span>WALK WALLET</span><div class="credit-total"><small>AVAILABLE</small><strong id="credit-total">1,280</strong><b>JW CREDITS</b></div><p>Hit your daily goal to earn 100 credits. A seven-day streak adds a 10% boost.</p><div class="credit-line"><span>Next goal reward</span><b>+100 <i>✦</i></b></div></section>
+          <section class="dashboard-card credit-card"><span>WALK WALLET</span><div class="credit-total"><small>AVAILABLE</small><strong id="credit-total">1,280</strong><b>BOUNTY CREDITS</b></div><p>Hit your daily goal to earn 100 credits. A seven-day streak adds a 10% boost.</p><div class="credit-line"><span>Next goal reward</span><b>+100 <i>✦</i></b></div></section>
         </div>
       </section>
 
@@ -85,7 +85,7 @@
       <section class="open-source shell"><div><p class="eyebrow"><i></i> OWN YOUR BUILD</p><h2>MADE TO BE<br /><em>REMADE.</em></h2></div><div><p>This version is intentionally small and transparent: no account, no tracking, no locked-in platform. It is ready for your GitHub repository and Cloudflare Worker.</p><a class="button" href="https://github.com/new" target="_blank" rel="noreferrer">Create GitHub repo <span>↗</span></a></div></section>
     </main>
 
-    <footer class="site-footer shell"><a class="brand" href="#top"><span class="brand-mark">↗</span><span>JUST<br />WALK</span></a><p>Every step, rewarded. Built as an editable open-source starter.</p><div><a href="#app">App</a><a href="#rewards">Rewards</a><a href="#protocol">Protocol</a></div><small>© <span id="year"></span> Just Walk Open. MIT licensed.</small></footer>
+    <footer class="site-footer shell"><a class="brand" href="#top"><span class="brand-mark">↗</span><span>STEP<br />BOUNTY</span></a><p>Every step, rewarded. Built as an editable open-source starter.</p><div><a href="#app">App</a><a href="#rewards">Rewards</a><a href="#protocol">Protocol</a></div><small>© <span id="year"></span> StepBounty. MIT licensed.</small></footer>
     <template id="reward-template"><article class="reward-card"><div class="reward-card-top"><span class="reward-symbol"></span><span class="reward-type"></span></div><h3></h3><p></p><div><b class="reward-cost"></b><button class="redeem-button" type="button">Redeem <span>↗</span></button></div></article></template>
     <script type="module" src="/app.js"></script>
   </body>
