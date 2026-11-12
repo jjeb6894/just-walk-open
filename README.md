@@ -1,28 +1,31 @@
-# Just Walk Open
+# StepBounty
 
-An editable, open-source walking rewards web app. It is a local-first demo: step counts, goals, streaks, and reward redemptions are stored only in the browser.
+**Turn daily movement into motivating rewards.**
 
-## What is included
+StepBounty is a polished, local-first walking rewards web app. It gives users a daily step goal, progress tracking, streaks and bounty credits they can redeem against a configurable rewards catalogue.
 
-- Responsive landing page and interactive web app
-- Daily step goal, distance, calories, streak, and credits
-- Redeemable rewards demo
-- Progressive web app manifest
-- Cloudflare Workers configuration
-- MIT license
+## Why it is useful
 
-## Edit locally
+- Responsive landing page and interactive mobile-style dashboard
+- Daily step goal, distance, calories, streak and credit tracking
+- Reward redemption demo with instant balance updates
+- Local-first privacy: no health or location data leaves the browser
+- Installable PWA manifest and app icon
+- Deployable to Cloudflare Workers as a static asset app
+- Simple codebase that is easy to rebrand, extend and connect to a real fitness API
+
+## Product status
+
+This version is a complete front-end demonstration. Step data is simulated and saved in the browser with localStorage. A production owner can add authentication, Apple Health or Health Connect integrations, a rewards partner catalogue and a backend ledger.
+
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL Wrangler prints. The editable application files are:
-
-- `public/index.html` — page content and layout
-- `public/styles.css` — visual design and responsive rules
-- `public/app.js` — steps, goals, credits, and reward data
+Wrangler prints the local address, usually `http://localhost:8787`.
 
 ## Validate and build
 
@@ -31,27 +34,20 @@ npm run validate
 npm run build
 ```
 
-## Deploy to Cloudflare
+The production-ready static files are written to `dist/`.
+
+## Deploy
 
 ```bash
 npm run deploy
 ```
 
-The first deployment requires a signed-in Cloudflare account. Wrangler publishes the site to a `workers.dev` URL. Add a custom domain in Cloudflare when ready.
+The included Cloudflare Workers configuration serves the `public/` directory.
 
-## Open-source repository
+## Privacy model
 
-Create a GitHub repository, then run:
+StepBounty is local-first. The demonstration does not request health or location permissions and does not transmit personal activity data.
 
-```bash
-git init
-git add .
-git commit -m "Initial open-source Just Walk build"
-git branch -M main
-git remote add origin https://github.com/YOUR-ACCOUNT/just-walk-open.git
-git push -u origin main
-```
+## Licence
 
-## Privacy
-
-This demo is intentionally browser-only. It does not read phone health data, use location, or send user data anywhere. Production health/step integrations need platform-specific permissions and an appropriate privacy policy.
+MIT. Commercial operators should replace the demo reward catalogue and complete their own legal, privacy and trademark review before launch.
