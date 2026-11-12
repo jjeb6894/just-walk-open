@@ -1,8 +1,8 @@
 {
-  "name": "just-walk-open",
+  "name": "stepbounty",
   "version": "1.0.0",
   "private": false,
-  "description": "An open-source, local-first walking rewards web app.",
+  "description": "A local-first walking rewards web app that turns daily movement into bounty credits.",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
